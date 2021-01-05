@@ -1,0 +1,46 @@
+{
+    "name": "rebelo-generator-composer",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "A generator for Yeoman that provides a boilerplate for a PHP library Composer project (Derivated from git://github.com/t1st3/generator-composer.git)",
+    "keywords": [
+	"yeoman-generator",
+	"php",
+	"composer",
+	"phpdoc",
+	"phpunit",
+	"phplint",
+	"phpcpd",
+	"packagist"
+    ],
+    "author": {
+	"name": "João Rebelo",
+	"url": "https://github.com/joaomfrebelo"
+    },
+    "main": "app/index.js",
+    "repository": {
+	"type": "git",
+	"url": "git://github.com/joaomfrebelo/generator-composer.git"
+    },
+    "scripts": {
+	"start": "node app/index.js",
+	"pretest": "xo test/* app/index.js phplint 'src/**/*.php'",
+	"test": "mocha"
+    },
+    "dependencies": {
+	"figlet": "^1.2.3",
+	"mkdirp": "^1.0.4",
+	"update-notifier": "^5.0.0",
+	"yeoman-generator": "^4.0.1",
+	"phplint": "^2.0.3"
+    },
+    "devDependencies": {
+	"mocha": "^7.0.1",
+	"xo": "^0.33.1",
+	"yeoman-assert": "^3.1.1",
+	"yeoman-test": "^3.0.0"
+    },
+    "engines": {
+	"node": ">=8"
+    }
+}
